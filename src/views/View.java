@@ -64,7 +64,7 @@ public class View {
                 System.out.println("Vui lòng nhập ngày sinh sinh viên đúng định dạng");
             }
         } while(!classId.matches("\\d+"));
-        return new Student(name,dayOfBirth,gender=="M",Integer.parseInt(phoneNumber),Integer.parseInt(classId));
+        return new Student(name,dayOfBirth,gender.equals("M"),Integer.parseInt(phoneNumber),Integer.parseInt(classId));
     }
 
     public void showMessage(boolean result) {
